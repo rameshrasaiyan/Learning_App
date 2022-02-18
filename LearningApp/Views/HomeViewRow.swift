@@ -35,8 +35,10 @@ struct HomeViewRow: View {
                 VStack (alignment: .leading, spacing: 10) {
                     Text("Learn \(title)")
                         .bold()
+                        .multilineTextAlignment(.leading)
                     
                     Text(description)
+                        .multilineTextAlignment(.leading)
                         .padding(.bottom, 20)
                         .font(Font.system(size: 14))
 
